@@ -3,10 +3,10 @@
 	import ist from './git-icon.svg';
 	import { DateTime } from 'luxon/src/luxon';
 
-	let ter: string = "";
+	let currentDateTime: string = "";
 	setInterval(() => {
 		let dateTime: DateTime = DateTime.local();
-		ter = dateTime.toLocaleString(DateTime.DATETIME_SHORT);
+		currentDateTime = dateTime.toLocaleString(DateTime.DATETIME_SHORT);
 	}, 1);
 </script>
 
@@ -30,7 +30,7 @@
 	</nav>
 
 	<div class="corner right">
-		{ter}
+		{currentDateTime}
 	</div>
 </header>
 
