@@ -18,8 +18,8 @@
 	<title>About</title>
 </svelte:head>
 
-<div class="content">
-	<h1>About Me</h1>
+<div>
+	<h1 class="text-4xl text-center">About Me</h1>
 </div>
 
 <style>
