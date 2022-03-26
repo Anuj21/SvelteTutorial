@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import ist from './git-icon.svg';
-	import { DateTime } from 'luxon/src/luxon';
+	import { DateTime } from 'luxon';
 
 	let currentDateTime: string = "";
 	setInterval(() => {
@@ -26,6 +26,9 @@
 			<li class:active={$page.url.pathname === '/todos'}> 
 				<a sveltekit:prefetch href="/todos">Todos</a>
 			</li>
+			<li class:active={$page.url.pathname === '/pokedex'}> 
+				<a sveltekit:prefetch href="/pokedex">Pokedex</a>
+			</li>
 		</ul>
 	</nav>
 
@@ -38,7 +41,7 @@
 	header {
 		display: flex;
 		justify-content: space-between;
-		background: rgba(255, 255, 255, 0.7);
+		background: rgba(255, 255, 255, 1);
 	}
 
 	.corner {
@@ -72,7 +75,7 @@
 		justify-content: center;
 	}
 
-	svg {
+	/* svg {
 		width: 2em;
 		height: 3em;
 		display: block;
@@ -80,7 +83,7 @@
 
 	path {
 		fill: var(--background);
-	}
+	} */
 
 	ul {
 		position: relative;

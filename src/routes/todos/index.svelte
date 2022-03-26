@@ -19,7 +19,7 @@
 </svelte:head>
 
 <div class="todos">
-	<h1>Todos</h1>
+	<h1 class="text-4xl text-center">Todos</h1>
 
 	<form
 		class="new"
@@ -76,12 +76,6 @@
 </div>
 
 <style>
-	.todos {
-		width: 100%;
-		max-width: var(--column-width);
-		margin: var(--column-margin-top) auto 0 auto;
-		line-height: 1;
-	}
 
 	.new {
 		margin: 0 0 0.5rem 0;
