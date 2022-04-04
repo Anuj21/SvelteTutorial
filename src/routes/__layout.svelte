@@ -10,22 +10,20 @@
 </main>
 
 <footer>
-	<p>visit <a href="https://github.com/Anuj21" target="_blank">My Github Account</a> to see more projects.</p>
+	<p>
+		visit <a href="https://github.com/Anuj21" target="_blank">My Github Account</a> to see more projects.
+	</p>
 </footer>
 
 <style>
 	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-
 		padding: 1rem;
-		
+
 		width: 100%;
-		max-width: 1024px;
+		height: 90vh;
 		margin: 0 auto;
 		box-sizing: border-box;
+		overflow-y: auto;
 	}
 
 	footer {
@@ -33,10 +31,10 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
- 	}
+		background: rgba(255, 255, 255, 1);
+	}
 
 	footer a {
 		font-weight: bold;
 	}
-
 </style>
