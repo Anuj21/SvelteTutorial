@@ -3,7 +3,7 @@
 	import ist from './git-icon.svg';
 	import { DateTime } from 'luxon';
 
-	let currentDateTime: string = "";
+	let currentDateTime: string = '';
 	setInterval(() => {
 		let dateTime: DateTime = DateTime.local();
 		currentDateTime = dateTime.toLocaleString(DateTime.DATETIME_SHORT);
@@ -23,11 +23,14 @@
 			<li class:active={$page.url.pathname === '/about'}>
 				<a sveltekit:prefetch href="/about">About</a>
 			</li>
-			<li class:active={$page.url.pathname === '/todos'}> 
+			<li class:active={$page.url.pathname === '/todos'}>
 				<a sveltekit:prefetch href="/todos">Todos</a>
 			</li>
-			<li class:active={$page.url.pathname === '/pokedex'}> 
+			<li class:active={$page.url.pathname === '/pokedex'}>
 				<a sveltekit:prefetch href="/pokedex">Pokedex</a>
+			</li>
+			<li class:active={$page.url.pathname === '/feedback'}>
+				<a sveltekit:prefetch href="/feedback">Feedback</a>
 			</li>
 		</ul>
 	</nav>
@@ -49,7 +52,6 @@
 		height: 3em;
 	}
 
-	
 	.corner.right {
 		display: flex;
 		align-items: center;
