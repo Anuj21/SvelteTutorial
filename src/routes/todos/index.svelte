@@ -18,7 +18,7 @@
 	<title>Todos</title>
 </svelte:head>
 
-<div class="todos">
+<div class="todos container">
 	<h1 class="text-4xl text-center">Todos</h1>
 
 	<form
@@ -76,7 +76,6 @@
 </div>
 
 <style>
-
 	.new {
 		margin: 0 0 0.5rem 0;
 	}

@@ -17,14 +17,12 @@
 				<source srcset="svelte-welcome.webp" type="image/webp" />
 				<img src="svelte-welcome.png" alt="Welcome" />
 			</picture>
-		</div>		
+		</div>
 
-		To <br />SvelteKit App
+		To<br />SvelteKit App
 	</h1>
 
-	<h2>
-		you can use the counter below to do the rating.
-	</h2>
+	<h2>you can use the counter below to do the rating.</h2>
 
 	<Counter />
 </section>
